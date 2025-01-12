@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.4rem;
+}
+
+body {
+  width: 100vw;
+  min-width: 320px;
+  height: 100vh;
+  min-height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+}
+
+#main {
+  display: inherit;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+#displays {
+  display: inherit;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+#display1 {
+  display: inherit;
+  flex-grow: 1;
+  justify-content: end;
+  align-items: end;
+  margin: 0 3vw;
+}
+
+#display2 {
+  display: inherit;
+  flex-grow: 1;
+  justify-content: end;
+  align-items: end;
+  margin: 0 3vw;
+  border-bottom: 2px solid #696969;
+}
+
+#buttons {
+  display: inherit;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+.button {
+  all: unset;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #696969;
+  border-radius: 100%;
+  width: 22vw;
+  height: 11vh;
+}
+
+.button:hover {
+  transition: 0.2s ease;
+  background-color: hsl(0, 0%, 60%);
+}
+
+.button:active {
+  transition: 0.1s ease;
+  background-color: hsl(0, 0%, 20%);
+}
+
+.actionButton {
+  background-color: orange;
+}
+
+.actionButton:hover {
+  transition: 0.2s ease;
+  background-color: hsl(39, 100%, 60%);
+}
+
+.actionButton:active {
+  transition: 0.1s ease;
+  background-color: hsl(39, 100%, 30%);
+}
+
+.actionButton sup {
+  position: relative;
+  bottom: 0.5rem;
+  font-size: 0.7rem;
+}
+
+.equalsButton {
+  background-color: #ff4500;
+}
+
+.equalsButton:hover {
+  transition: 0.2s ease;
+  background-color: hsl(16, 100%, 60%);
+}
+
+.equalsButton:active {
+  transition: 0.1s ease;
+  background-color: hsl(16, 100%, 30%);
+}
+
+@media screen and (min-width: 1024px) {
+  #main {
+    max-width: 1024px;
+    max-height: 1400px;
+    border-radius: 20px;
+  }
+
+  #buttons {
+    border-radius: 20px;
+  }
+
+  .button {
+    max-width: 226px;
+    max-height: 150px;
+  }
+}
