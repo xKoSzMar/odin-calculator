@@ -28,7 +28,9 @@ body {
 #displays {
   display: inherit;
   flex-direction: column;
-  flex-grow: 2;
+  flex: 3 1;
+  color: #fff;
+  overflow-wrap: anywhere;
 }
 
 #display1 {
@@ -37,15 +39,18 @@ body {
   justify-content: end;
   align-items: end;
   margin: 0 3vw;
+  font-size: 3rem;
 }
 
 #display2 {
   display: inherit;
   flex-grow: 1;
+  flex-basis: inherit;
   justify-content: end;
   align-items: end;
   margin: 0 3vw;
   border-bottom: 2px solid #696969;
+  font-size: 3rem;
 }
 
 #buttons {
