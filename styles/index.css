@@ -25,32 +25,16 @@ body {
   background-color: black;
 }
 
-#displays {
+#display {
   display: inherit;
-  flex-direction: column;
+  justify-content: end;
+  align-items: end;
   flex: 3 1;
   color: #fff;
-  overflow-wrap: anywhere;
-}
-
-#display1 {
-  display: inherit;
-  flex-grow: 1;
-  justify-content: end;
-  align-items: end;
-  margin: 0 3vw;
-  font-size: 3rem;
-}
-
-#display2 {
-  display: inherit;
-  flex-grow: 1;
-  flex-basis: inherit;
-  justify-content: end;
-  align-items: end;
-  margin: 0 3vw;
+  margin: 3vw 3vw 0 3vw;
   border-bottom: 2px solid #696969;
   font-size: 3rem;
+  overflow-wrap: anywhere;
 }
 
 #buttons {
